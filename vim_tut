@@ -1,0 +1,95 @@
+Basics in Normal mode:
+Movements:
+h:left
+j:down
+k:up
+l:right
+
+Page movements:
+<CR> + E:page down by 1
+<CR> + Y:page up by 1
+<CR> + F:page down by a lot
+<CR> + B:page up by a lot
+
+Move within words:
+w:advance by a word
+b:back by a word
+
+Move within lines:
+^:beginning of the line
+$:end of the line
+
+Move within paragraphs:
+}:advance by one paragraph
+{:back by one paragraph
+
+Move within File:
+gg:top
+G:bottom
+
+Operations:
+i:insert before curr pos
+a:insert after curr pos
+o:insert a new line after curr line and insert
+
+I:move to the beginning of the line and insert
+A:move to the end of the line and insert
+O:insert a new line before curr line and insert
+
+d:delete begin
+dw:delete word(from cursor)
+dd:delete line
+x:delete current char
+d + {
+	i:inside(excluding the indicators)
+	a:all(including the indicators)
+} + {
+	//within
+	w:word
+	):parenthesis
+	]:square bracket(?)
+	}:curl bracket
+	>:gt
+	":double quotes
+}
+
+dt + indicator:delete until sth(excluding) 
+df + indicator:delete until sth(including)
+
+e.g.:
+while (fuck this* shit)
+* = cursor position
+da) removes everything within parenthesis
+
+now here's *the shit
+dt$(delete until the end of the line)
+
+c:change
+cw:change word(begin from the cursor)
+cc:change line
+c + i(in)/a(all) + {
+	//within
+	w,),],},>,"
+}
+ct + indicator: change until indicator(including)
+cf + indicator: change until indicator(excluding)
+
+y:yank(copy?)
+yw:copy word from curr pos
+yy:copy line
+y}:copy paragraph from curr pos
+y + i/a + { w,),],},>," }
+yt/f + indicator:yank until indicator
+
+v:select
+vw:select word
+vv:select line
+...same
+
+.:repete last motion
+e.g.:
+diw fuck
+move to another word and . can change the word to fuck 
+
+p:past the yanked object belw
+P:past the yanked object above
