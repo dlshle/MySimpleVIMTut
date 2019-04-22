@@ -1,3 +1,7 @@
+~/.vim/vimrc is the config file for the current user
+
+While in insert mode, <CR> + N gives autocomplete options.
+
 Basics in Normal mode:
 Movements:
 h:left
@@ -42,6 +46,8 @@ I:move to the beginning of the line and insert
 A:move to the end of the line and insert
 O:insert a new line before curr line and insert
 
+<CR> + c: exit inserting mode
+ 
 d:delete begin
 dw:delete word(from cursor)
 dd:delete line
