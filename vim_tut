@@ -5,6 +5,12 @@ j:down
 k:up
 l:right
 
+Windiws:
+split + file: to split a working window on the file horizontally.
+vsplie + file: to vertically split a working window.
+<CR> + direction arrow to navigate through the opened windows.
+e + dir: to open the directory viewer(<CR> + 6 to exit)
+
 Page movements:
 <CR> + E:page down by 1
 <CR> + Y:page up by 1
