@@ -114,3 +114,6 @@ move to another word and . can change the word to fuck
 
 p:past the yanked object belw
 P:past the yanked object above
+
+gd def:go to local definition def
+gD def:go to global definition def
