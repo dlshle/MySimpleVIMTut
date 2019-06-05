@@ -32,7 +32,11 @@ Page movements:
 
 Move within words:
 w:advance by a word
+W:advance by a word w/out punctuation
 b:back by a word
+B:back by a word w/out punctuation
+e:move to the back of the word
+E:move to the back of the word w/out punctuation
 
 Move within lines:
 ^:beginning of the line
